@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roman Jaishi | Midterm Profile Presentation</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <div class="brand">
+        <!-- Linked to GitHub Profile Avatar -->
+        <img src="https://github.com/romanjaishi91-oss.png" alt="Roman Jaishi" class="brand-avatar-img">
+        <div class="brand-name">Roman Jaishi</div>
+      </div>
+      <button class="view-mode-btn" onclick="toggleAllSlides()" id="viewToggleBtn">Show All Slides Mode</button>
+    </div>
+  </header>
+
+  <!-- Main Presentation Deck -->
+  <main class="container">
+    <div class="presentation-wrapper">
+      
+      <!-- SLIDE 1: Cover -->
+      <div class="slide active hero-slide" id="slide-1">
+        <img src="https://github.com/romanjaishi91-oss.png" alt="Roman Jaishi" class="hero-avatar-img">
+        <h1>Roman Jaishi</h1>
+        <p class="slide-subtitle">Welcome to my midterm showcase presentation covering my top interests, sports passions, and communication apps.</p>
+        <span class="slide-badge">Midterm Presentation • Slide 1 of 4</span>
+      </div>
+
+      <!-- SLIDE 2: Preferred Apps -->
+      <div class="slide" id="slide-2">
+        <span class="slide-badge">Slide 2 of 4</span>
+        <h2 class="slide-title">1st Choice Apps</h2>
+        <p class="slide-subtitle">My primary instant messaging platforms for continuous connection and social engagement.</p>
+        
+        <div class="cards-grid">
+          <div class="card app-card">
+            <div class="app-icon-badge messenger-badge">⚡</div>
+            <div>
+              <h3>Messenger</h3>
+              <p>First choice for social media networking, quick personal messages, and active group discussions.</p>
+            </div>
+          </div>
+
+          <div class="card app-card">
+            <div class="app-icon-badge whatsapp-badge">💬</div>
+            <div>
+              <h3>WhatsApp</h3>
+              <p>Essential tool for secure end-to-end encrypted chats, voice calls, and fast daily communication.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: Sports & Gaming (With Photos) -->
+      <div class="slide" id="slide-3">
+        <span class="slide-badge">Slide 3 of 4</span>
+        <h2 class="slide-title">Sports & Gaming Interests</h2>
+        <p class="slide-subtitle">The athletic sports and video games I love following and actively playing.</p>
+        
+        <div class="cards-grid">
+          
+          <!-- Cricket Card -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&w=600&q=80" alt="Cricket Match">
+            </div>
+            <div class="card-body">
+              <div class="card-header-flex">
+                <h3>Cricket</h3>
+                <span class="card-icon">🏏</span>
+              </div>
+              <p>Following intense tournament dynamics, T20 world cups, test series, and classic cover drives.</p>
+            </div>
+          </div>
+
+          <!-- Football Card -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Football Player">
+            </div>
+            <div class="card-body">
+              <div class="card-header-flex">
+                <h3>Football</h3>
+                <span class="card-icon">⚽</span>
+              </div>
+              <p>Fan of tactical team maneuvers, fast-paced league matches, and thrilling goal moments.</p>
+            </div>
+          </div>
+
+          <!-- Basketball Card -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80" alt="Basketball Game">
+            </div>
+            <div class="card-body">
+              <div class="card-header-flex">
+                <h3>Basketball</h3>
+                <span class="card-icon">🏀</span>
+              </div>
+              <p>Drawn to high-flying slam dunks, fast court rotations, precise shooting, and game highlights.</p>
+            </div>
+          </div>
+
+          <!-- Gaming Card -->
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80" alt="Gaming Setup">
+            </div>
+            <div class="card-body">
+              <div class="card-header-flex">
+                <h3>Gaming</h3>
+                <span class="card-icon">🎮</span>
+              </div>
+              <p>Passionate about competitive multiplayer action, online strategy games, and team coordination.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SLIDE 4: Profile Overview -->
+      <div class="slide" id="slide-4">
+        <span class="slide-badge">Slide 4 of 4</span>
+        <h2 class="slide-title">Profile Summary</h2>
+        <p class="slide-subtitle">Midterm overview matrix for Roman Jaishi.</p>
+        
+        <div class="highlights-list">
+          <div class="highlight-item">
+            <strong>Full Name</strong>
+            <span>Roman Jaishi</span>
+          </div>
+          <div class="highlight-item">
+            <strong>GitHub Username</strong>
+            <span>@romanjaishi91-oss</span>
+          </div>
+          <div class="highlight-item">
+            <strong>Preferred Apps</strong>
+            <span>1st Messenger, WhatsApp</span>
+          </div>
+          <div class="highlight-item">
+            <strong>Passions</strong>
+            <span>Cricket, Football, Basketball, Gaming</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Controls Bar -->
+      <div class="controls" id="controlsBar">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)" disabled>Previous</button>
+        
+        <div class="dots">
+          <div class="dot active" onclick="goToSlide(0)"></div>
+          <div class="dot" onclick="goToSlide(1)"></div>
+          <div class="dot" onclick="goToSlide(2)"></div>
+          <div class="dot" onclick="goToSlide(3)"></div>
+        </div>
+
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Next</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Roman Jaishi • Midterm Web Presentation</p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const controlsBar = document.getElementById('controlsBar');
+    const viewToggleBtn = document.getElementById('viewToggleBtn');
+    let isAllVisible = false;
+
+    function showSlide(index) {
+      if (isAllVisible) return;
+      
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === index);
+      });
+
+      prevBtn.disabled = (index === 0);
+      nextBtn.disabled = (index === slides.length - 1);
+    }
+
+    function changeSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = 0;
+      if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+      showSlide(currentSlide);
+    }
+
+    function goToSlide(index) {
+      if (isAllVisible) return;
+      currentSlide = index;
+      showSlide(currentSlide);
+    }
+
+    function toggleAllSlides() {
+      isAllVisible = !isAllVisible;
+
+      if (isAllVisible) {
+        slides.forEach(slide => slide.classList.add('active'));
+        controlsBar.style.display = 'none';
+        viewToggleBtn.innerText = 'Switch to Slide Presentation Mode';
+      } else {
+        controlsBar.style.display = 'flex';
+        viewToggleBtn.innerText = 'Show All Slides Mode';
+        showSlide(currentSlide);
+      }
+    }
+  </script>
+</body>
+</html>
